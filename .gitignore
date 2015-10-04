@@ -1,0 +1,4 @@
+bundle
+.sw*
+.*.sw*
+.netrwhist
