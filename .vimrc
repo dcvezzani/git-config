@@ -8,6 +8,7 @@ colorscheme robinhood
 
 set nocompatible
 call pathogen#infect()
+call pathogen#helptags()
 syntax on
 filetype on
 filetype plugin indent on
