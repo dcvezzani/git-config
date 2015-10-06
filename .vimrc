@@ -7,11 +7,12 @@ set autoindent
 colorscheme robinhood
 
 set nocompatible
-execute pathogen#infect()
+call pathogen#infect()
 syntax on
+filetype on
 filetype plugin indent on
 
-au BufNewFile,BufRead *.md set ft=md
+autocmd BufNewFile,BufReadPost *.markdown,*.mdown,*.mkd,*.mkdn,*.md set filetype=md
 nmap gm :LivedownToggle<CR>
 
 " current filename without the extension
