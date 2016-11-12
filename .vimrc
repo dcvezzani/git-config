@@ -42,7 +42,7 @@ function! SaveIt()
   let vim_autosave=$VIM_AUTOSAVE
 
   if vim_autosave == 'true'
-    let one_line = ((line("$") < 2)
+    let one_line = (line("$") < 2)
 
     if getfsize(expand(@%)) == 0 || (one_line && strwidth(getline('.')) == 0)
       return
@@ -69,7 +69,6 @@ function! SaveIt()
 
         if one_line
           "call setpos(origPos[0], origPos[1], origPos[2], origPos[3])
-          echo "asdf"
           let @z = 'o' | normal @z
         else
           call setline(line("."), newLine)
