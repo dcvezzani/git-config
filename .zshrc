@@ -132,6 +132,8 @@ alias owiki='open https://github.com/crystalcommerce/core/wiki'
 alias down='cd ~/Downloads/'
 alias odown='open ~/Downloads/'
 
+alias opt='open https://www.pivotaltracker.com/n/projects/1884983'
+
 alias notify='scripts/notify'
 
 alias textwc='mvim /Users/davidvezzani/Dropbox/journal/current/20161027-sending-text-messages-to-ward-council-members.md'
