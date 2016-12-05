@@ -16,6 +16,8 @@ filetype plugin indent on
 autocmd BufNewFile,BufReadPost *.markdown,*.mdown,*.mkd,*.mkdn,*.md set filetype=md
 autocmd BufEnter * if &filetype == "" | setlocal filetype=md | endif
 
+set shell=bash\ -l
+
 nmap gm :LivedownToggle<CR>
 
 " current filename without the extension
