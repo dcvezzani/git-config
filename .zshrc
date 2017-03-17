@@ -137,6 +137,7 @@ alias oapp='ccapp=$(echo $(pwd) | sed '"'"'s;.*reliacode/crystal_commerce/\([^/ 
 alias cdcc='cd ~/reliacode/crystal_commerce; cd '
 alias occ='cd ~/reliacode/crystal_commerce; open '
 alias owikis='ccapp=$(echo $(pwd) | sed '"'"'s;.*reliacode/crystal_commerce/\([^/ ]*\).*;\1;g'"'"'); echo "$ccapp"; open https://github.com/crystalcommerce/"$ccapp"/wiki'
+alias obuf='mvim ~/fbuf-$(date +%Y%m%d).md'
 
 alias notify='scripts/notify'
 
