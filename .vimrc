@@ -1,7 +1,11 @@
 set tabstop=2
 set shiftwidth=2
-set expandtab
+
+" expandtab converts tabs to spaces
+set noexpandtab
 set smarttab
+set ruler
+"set hlsearch
 
 set autoindent
 colorscheme robinhood

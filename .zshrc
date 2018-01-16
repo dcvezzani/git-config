@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/davidvezzani/.oh-my-zsh
+export ZSH=/Users/dcvezzani/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -45,7 +45,8 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(rails git ruby brew chucknorris)
+# plugins=(rails git ruby brew chucknorris)
+plugins=(git ruby brew)
 
 # User configuration
 
@@ -54,8 +55,8 @@ plugins=(rails git ruby brew chucknorris)
 source $ZSH/oh-my-zsh.sh
 source ~/.bash-path
 
-export PATH="$PATH:/Users/davidvezzani/bin"
-export PATH="$PATH:/Users/davidvezzani/.npm-packages/lib/node_modules/livedown/bin"
+export PATH="$PATH:/Users/dcvezzani/bin"
+export PATH="$PATH:/Users/dcvezzani/.npm-packages/lib/node_modules/livedown/bin"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -88,9 +89,7 @@ source ~/scripts/findr_filtr.sh
 
 # chuck_cow
 
-alias replace='~/scripts/replace.sh'
-
-export HOME_DIR=/Users/davidvezzani
+export HOME_DIR=/Users/dcvezzani
 
 # function setjdk() {
 #   if [ $# -ne 0 ]; then
@@ -109,58 +108,31 @@ export HOME_DIR=/Users/davidvezzani
 #
 
 #I assume you have installed all different versions - or else delete some
-export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
-export JAVA_7_HOME=$(/usr/libexec/java_home -v1.7)
+#export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
+#export JAVA_7_HOME=$(/usr/libexec/java_home -v1.7)
 # export JAVA_6_HOME=$(/usr/libexec/java_home -v1.6)
  
 # alias java6='export JAVA_HOME=$JAVA_6_HOME'
-alias java7='export JAVA_HOME=$JAVA_7_HOME'
-alias java8='export JAVA_HOME=$JAVA_8_HOME'
+#alias java7='export JAVA_HOME=$JAVA_7_HOME'
+#alias java8='export JAVA_HOME=$JAVA_8_HOME'
  
 #default java7
-export JAVA_HOME=$JAVA_8_HOME
+#export JAVA_HOME=$JAVA_8_HOME
 
-alias journal='cd ~/Dropbox/journal/current/'
-alias ojournal='open ~/Dropbox/journal/current/'
-
-alias wiki='cd ~/reliacode/crystal_commerce/core.wiki/'
-alias owiki='open https://github.com/crystalcommerce/core/wiki'
-
-alias down='cd ~/Downloads/'
-alias odown='open ~/Downloads/'
-
-alias opt='open https://www.pivotaltracker.com/n/projects/1884983'
-
-alias opulls='ccapp=$(echo $(pwd) | sed '"'"'s;.*reliacode/crystal_commerce/\([^/ ]*\).*;\1;g'"'"'); echo "$ccapp"; open https://github.com/crystalcommerce/"$ccapp"/pulls'
-alias oloc='ccapp=$(echo $(pwd) | sed '"'"'s;.*reliacode/crystal_commerce/\([^/ ]*\).*;\1;g'"'"'); echo "$ccapp"; ~/scripts/open_local_rails_app.sh "$ccapp"'
-alias oapp='ccapp=$(echo $(pwd) | sed '"'"'s;.*reliacode/crystal_commerce/\([^/ ]*\).*;\1;g'"'"'); echo "$ccapp"; ~/scripts/open_rails_app.sh "$ccapp"'
-alias cdcc='cd ~/reliacode/crystal_commerce; cd '
-alias occ='cd ~/reliacode/crystal_commerce; open '
-alias owikis='ccapp=$(echo $(pwd) | sed '"'"'s;.*reliacode/crystal_commerce/\([^/ ]*\).*;\1;g'"'"'); echo "$ccapp"; open https://github.com/crystalcommerce/"$ccapp"/wiki'
-alias obuf='mvim /Users/davidvezzani/Dropbox/journal/current/fbuf-$(date +%Y%m%d).md'
-
-alias notify='scripts/notify'
-
-alias textwc='mvim /Users/davidvezzani/Dropbox/journal/11-nov-2016/20161027-sending-text-messages-to-ward-council-members.md'
-
-alias neatscan='open -a Terminal /Library/Image\ Capture/Devices/NeatScannersICDriver.app/Contents/MacOS/NeatScannersICDriver'
-
-export NVM_DIR="/Users/davidvezzani/.nvm"
+export NVM_DIR="/Users/dcvezzani/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-
-export TTX_DIR=/Users/davidvezzani/Library/Python/2.7/bin
+export TTX_DIR=/Users/dcvezzani/Library/Python/2.7/bin
 export PATH=$PATH:$TTX_DIR
-
-alias wl='~/scripts/work-latest.sh'
-alias wl-cache='cat ~/.wl-cache'
-alias open-sc="open $(defaults read com.apple.screencapture location)"
-alias gitimg="open https://github.com/crystalcommerce/core/issues/new"
-alias pgitimg="open https://github.com/dcvezzani/dcv_journal/issues/new"
-
-alias ghc-switch='/Users/davidvezzani/scripts/ghc-switch'
 export PATH=/usr/local/stow:$PATH
+export MYPGPATH='/Applications/Postgres.app/Contents/Versions/9.6/bin'
+export PATH=$MYPGPATH:$PATH
+export JOURNAL_DIR=$HOME/Documents/journal
+# export ITERM_EDITOR=/usr/local/bin/mine
+export ITERM_EDITOR=/Applications/Visual\\\ Studio\\\ Code.app/Contents/Resources/app/bin/code
 
+source /Users/dcvezzani/.bash_profile
+source /Users/dcvezzani/.bash-aliases
 
-source /Users/davidvezzani/.bash_profile
-
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
