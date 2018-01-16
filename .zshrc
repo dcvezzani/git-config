@@ -158,8 +158,9 @@ alias pgitimg="open https://github.com/dcvezzani/dcv_journal/issues/new"
 alias ghc-switch='/Users/davidvezzani/scripts/ghc-switch'
 export PATH=/usr/local/stow:$PATH
 
-
 source /Users/davidvezzani/.bash_profile
+source /Users/davidvezzani/.bash-aliases
+source /Users/davidvezzani/.vim/.bash-aliases
 
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"

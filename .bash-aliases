@@ -1,0 +1,7 @@
+alias obuf='~/scripts/obuf.sh'
+alias notify='scripts/notify'
+alias open-sc="open $(defaults read com.apple.screencapture location)"
+alias github='~/scripts/github-open.sh'
+alias todos-for='~/scripts/todos-for.sh'
+
+
