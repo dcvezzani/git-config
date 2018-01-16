@@ -137,17 +137,14 @@ alias oapp='ccapp=$(echo $(pwd) | sed '"'"'s;.*reliacode/crystal_commerce/\([^/ 
 alias cdcc='cd ~/reliacode/crystal_commerce; cd '
 alias occ='cd ~/reliacode/crystal_commerce; open '
 alias owikis='ccapp=$(echo $(pwd) | sed '"'"'s;.*reliacode/crystal_commerce/\([^/ ]*\).*;\1;g'"'"'); echo "$ccapp"; open https://github.com/crystalcommerce/"$ccapp"/wiki'
-alias obuf='mvim /Users/davidvezzani/Dropbox/journal/current/fbuf-$(date +%Y%m%d).md'
+# alias obuf='mvim /Users/davidvezzani/Dropbox/journal/current/fbuf-$(date +%Y%m%d).md'
+alias obuf='~/scripts/obuf.sh'
 
 alias notify='scripts/notify'
 
 alias textwc='mvim /Users/davidvezzani/Dropbox/journal/11-nov-2016/20161027-sending-text-messages-to-ward-council-members.md'
 
 alias neatscan='open -a Terminal /Library/Image\ Capture/Devices/NeatScannersICDriver.app/Contents/MacOS/NeatScannersICDriver'
-
-export NVM_DIR="/Users/davidvezzani/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
 
 export TTX_DIR=/Users/davidvezzani/Library/Python/2.7/bin
 export PATH=$PATH:$TTX_DIR
@@ -164,3 +161,5 @@ export PATH=/usr/local/stow:$PATH
 
 source /Users/davidvezzani/.bash_profile
 
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
