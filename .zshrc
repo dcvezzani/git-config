@@ -127,7 +127,7 @@ export PATH=$PATH:$TTX_DIR
 export PATH=/usr/local/stow:$PATH
 export MYPGPATH='/Applications/Postgres.app/Contents/Versions/9.6/bin'
 export PATH=$MYPGPATH:$PATH
-export JOURNAL_DIR=$HOME/Documents/journal
+export JOURNAL_DIR=/Users/dcvezzani/Documents/journal
 # export ITERM_EDITOR=/usr/local/bin/mine
 export ITERM_EDITOR=/Applications/Visual\\\ Studio\\\ Code.app/Contents/Resources/app/bin/code
 
@@ -137,3 +137,4 @@ source /Users/dcvezzani/.vim/.bash-aliases
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
