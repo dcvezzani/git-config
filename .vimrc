@@ -33,5 +33,5 @@ nmap gm :LivedownToggle<CR>
 " exclude .vim files whose filename starts with 'x'
 " or move scripts to a different location so they are not pulled in
 for f in split(system('~/scripts/gather-active-vim-scripts.sh'), ' ')
-  exe 'source' f
+  exe 'let $JOURNAL_DIR="' . $JOURNAL_DIR . '" | source' f
 endfor
