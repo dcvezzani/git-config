@@ -2,3 +2,5 @@ bundle
 .sw*
 .*.sw*
 .netrwhist
+
+sessions/

@@ -1,5 +1,7 @@
+source $HOME/.bashrc
+
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/davidvezzani/.oh-my-zsh
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -45,7 +47,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(rails git ruby brew)
+plugins=(git brew)
 
 # User configuration
 
@@ -54,8 +56,8 @@ plugins=(rails git ruby brew)
 source $ZSH/oh-my-zsh.sh
 source ~/.bash-path
 
-export PATH="$PATH:/Users/davidvezzani/bin"
-export PATH="$PATH:/Users/davidvezzani/.npm-packages/lib/node_modules/livedown/bin"
+export PATH="$PATH:$HOME/bin"
+export PATH="$PATH:$HOME/.npm-packages/lib/node_modules/livedown/bin"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -90,7 +92,7 @@ source ~/scripts/findr_filtr.sh
 
 alias replace='~/scripts/replace.sh'
 
-export HOME_DIR=/Users/davidvezzani
+export HOME_DIR=$HOME
 
 # function setjdk() {
 #   if [ $# -ne 0 ]; then
@@ -110,22 +112,23 @@ export HOME_DIR=/Users/davidvezzani
 
 #I assume you have installed all different versions - or else delete some
 export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
-export JAVA_7_HOME=$(/usr/libexec/java_home -v1.7)
+# export JAVA_7_HOME=$(/usr/libexec/java_home -v1.7)
 # export JAVA_6_HOME=$(/usr/libexec/java_home -v1.6)
 
 #default java7
 export JAVA_HOME=$JAVA_8_HOME
  
-export TTX_DIR=/Users/davidvezzani/Library/Python/2.7/bin
+export TTX_DIR=$HOME/Library/Python/2.7/bin
 export PATH=$PATH:$TTX_DIR
 
 export PATH=/usr/local/stow:$PATH
 
-source /Users/davidvezzani/.bash_profile
-source /Users/davidvezzani/.bash-aliases
-source /Users/davidvezzani/.vim/.bash-aliases
+source $HOME/.bash_profile
+source $HOME/.bash-aliases
+source $HOME/.vim/.bash-aliases
 
 export NVM_DIR="$HOME/.nvm"
 # . "/usr/local/opt/nvm/nvm.sh"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
