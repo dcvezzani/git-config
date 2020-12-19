@@ -1,0 +1,1 @@
+/Users/dcvezzani/scripts/pdf_navigation.vim

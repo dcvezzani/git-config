@@ -1,0 +1,1 @@
+/Users/dcvezzani/scripts/journal-file-name.vim

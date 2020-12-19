@@ -111,6 +111,8 @@ export HOME_DIR=$HOME
 #
 
 #I assume you have installed all different versions - or else delete some
+export JAVA_12_HOME=$(/usr/libexec/java_home -v12)
+export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
 export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
 # export JAVA_7_HOME=$(/usr/libexec/java_home -v1.7)
 # export JAVA_6_HOME=$(/usr/libexec/java_home -v1.6)
@@ -127,8 +129,36 @@ source $HOME/.bash_profile
 source $HOME/.bash-aliases
 source $HOME/.vim/.bash-aliases
 
+eval "$(direnv hook zsh)"
+
 export NVM_DIR="$HOME/.nvm"
 # . "/usr/local/opt/nvm/nvm.sh"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
+export NODE_MODULES_BIN="$HOME/scripts/node_modules/.bin"
+export PATH="$PATH:$NODE_MODULES_BIN"
+
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+export PATH="/usr/local/sbin:$PATH"
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/dcvezzani/personal-projects/aws/serverless-nodejs-template/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/dcvezzani/personal-projects/aws/serverless-nodejs-template/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/dcvezzani/personal-projects/aws/serverless-nodejs-template/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/dcvezzani/personal-projects/aws/serverless-nodejs-template/node_modules/tabtab/.completions/sls.zsh
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[[ -f /Users/dcvezzani/personal-projects/aws/serverless-nodejs-template/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/dcvezzani/personal-projects/aws/serverless-nodejs-template/node_modules/tabtab/.completions/slss.zsh
+###-tns-completion-start-###
+if [ -f /Users/dcvezzani/.tnsrc ]; then 
+    source /Users/dcvezzani/.tnsrc 
+fi
+###-tns-completion-end-###
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/dcvezzani/.sdkman"
+[[ -s "/Users/dcvezzani/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/dcvezzani/.sdkman/bin/sdkman-init.sh"

@@ -9,3 +9,32 @@ alias open-sc="open $(defaults read com.apple.screencapture location)"
 alias todos-for='~/scripts/todos-for.sh'
 alias wl-cache='cat ~/.wl-cache'
 alias wl='~/scripts/work-latest.sh'
+
+alias mlcp='/Users/dcvezzani/Downloads/2018-08-29/mlcp-9.0.6/bin/mlcp.sh'
+alias lived="~/scripts/node_modules/.bin/livedown start --port 1337 --open --browser \"'google chrome'\""
+alias tailml="~/scripts/tailml.sh"
+alias gitdiff="~/scripts/git-diff.sh"
+
+alias running-on="~/scripts/running-on.sh"
+alias dishooks="mv .git/hooks .git/hooks.disabled"
+alias enhooks="mv .git/hooks.disabled .git/hooks"
+
+alias oxygen="~/scripts/oxygen"
+
+alias ff="~/scripts/find-file.sh"
+alias ffo="~/scripts/find-file.sh | xargs mvim"
+alias wins="osascript ~/scripts/save-and-restore-window-position-and-sizes.scpt"
+alias wing="osascript ~/scripts/gather-windows.scpt"
+alias wing="osascript ~/scripts/gather-windows.scpt"
+
+alias myip="ifconfig | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p' | head -n1 | xargs"
+alias gitwork="~/scripts/show-git-commit-activity.sh"
+alias gitcommit="git commit --no-verify"
+alias remove-ssh-key="~/scripts/remove-ssh-key.sh"
+alias format-pondering-sessions="~/scripts/format-pondering-sessions.sh"
+
+alias start-memcached="launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.memcached.plist"
+alias stop-memcached="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.memcached.plist"
+
+alias start-ssh-agent="~/scripts/start-ssh-agent.sh"
+

@@ -5,6 +5,8 @@ set shiftwidth=2
 set expandtab
 set smarttab
 
+set nu
+
 set autoindent
 colorscheme robinhood
 
@@ -35,7 +37,8 @@ nmap gm :LivedownToggle<CR>
 " exclude .vim files whose filename starts with 'x'
 " or move scripts to a different location so they are not pulled in
 " let JOURNAL_DIR = GetJournalDir()
-let @n = $JOURNAL_DIR
 for f in split(system('~/scripts/gather-active-vim-scripts.sh'), ' ')
   exe 'let $JOURNAL_DIR="' . $JOURNAL_DIR . '" | source' f
 endfor
+
+" :! ~/scripts/import-active-vim-scripts.sh
