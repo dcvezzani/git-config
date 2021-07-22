@@ -38,7 +38,12 @@ nmap gm :LivedownToggle<CR>
 " or move scripts to a different location so they are not pulled in
 " let JOURNAL_DIR = GetJournalDir()
 for f in split(system('~/scripts/gather-active-vim-scripts.sh'), ' ')
+  " echo 'loading: '.f
   exe 'let $JOURNAL_DIR="' . $JOURNAL_DIR . '" | source' f
 endfor
 
 " :! ~/scripts/import-active-vim-scripts.sh
+
+" format XML
+com! FormatXML :%!python3 -c "import xml.dom.minidom, sys; print(xml.dom.minidom.parse(sys.stdin).toprettyxml())"
+nnoremap = :FormatXML<Cr>

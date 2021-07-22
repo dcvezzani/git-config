@@ -38,3 +38,11 @@ alias stop-memcached="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.memc
 
 alias start-ssh-agent="~/scripts/start-ssh-agent.sh"
 
+alias python="python3"
+alias debut='cd ~/dcvezzani/Movies/Debut'
+alias mp4split='MP4Box -splits 25000'
+
+alias cf7="/usr/local/Cellar/cf-cli@7/7.2.0/bin/cf"
+
+alias setjava='~/scripts/setjava.sh'
+
