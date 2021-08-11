@@ -45,4 +45,4 @@ alias mp4split='MP4Box -splits 25000'
 alias cf7="/usr/local/Cellar/cf-cli@7/7.2.0/bin/cf"
 
 alias setjava='~/scripts/setjava.sh'
-
+alias mvim='/Applications/MacVim.app/Contents/bin/mvim'
