@@ -162,4 +162,4 @@ fi
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/dcvezzani/.sdkman"
 [[ -s "/Users/dcvezzani/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/dcvezzani/.sdkman/bin/sdkman-init.sh"
-export PATH="/usr/local/opt/terraform@0.13/bin:$PATH"
+# export PATH="/usr/local/opt/terraform@0.13/bin:$PATH"
