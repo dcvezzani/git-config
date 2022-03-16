@@ -46,3 +46,14 @@ alias cf7="/usr/local/Cellar/cf-cli@7/7.2.0/bin/cf"
 
 alias setjava='~/scripts/setjava.sh'
 alias mvim='/Applications/MacVim.app/Contents/bin/mvim'
+
+alias openi='/Applications/iTerm.app/Contents/Resources/it2_api_wrapper.sh /Users/dcvezzani/.config/iterm2/AppSupport/iterm2env-3.7/versions/3.7.9/bin/python3 /Users/dcvezzani/.config/iterm2/AppSupport/Scripts/window-three-rows.py -p '
+
+alias load-cfcli='source ~/scripts/cf.sh'
+alias git-commit-details='~/scripts/git-commit-push-details.sh '
+alias git-pretty-files='~/scripts/git-cli-utils.sh files pretty'
+alias load-git-tag-versioning='source ~/scripts/git-tag-v2.sh'
+
+
+
+
