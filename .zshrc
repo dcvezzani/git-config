@@ -54,6 +54,7 @@ plugins=(git brew)
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
+# source ~/.bashrc
 source ~/.bash-path
 
 export PATH="$PATH:$HOME/bin"
@@ -163,3 +164,7 @@ fi
 export SDKMAN_DIR="/Users/dcvezzani/.sdkman"
 [[ -s "/Users/dcvezzani/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/dcvezzani/.sdkman/bin/sdkman-init.sh"
 # export PATH="/usr/local/opt/terraform@0.13/bin:$PATH"
+
+# Add Visual Studio Code (code)
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+

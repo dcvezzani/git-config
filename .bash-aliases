@@ -51,9 +51,38 @@ alias openi='/Applications/iTerm.app/Contents/Resources/it2_api_wrapper.sh /User
 
 alias load-cfcli='source ~/scripts/cf.sh'
 alias git-commit-details='~/scripts/git-commit-push-details.sh '
-alias git-pretty-files='~/scripts/git-cli-utils.sh files pretty'
+alias git-pretty='~/scripts/git-cli-utils.sh files pretty'
+alias git-pretty-files='~/scripts/git-cli-utils.sh files pretty targeted '
+alias git-ls='~/scripts/git-cli-utils.sh files ls '
+alias git-add='~/scripts/git-cli-utils.sh files git-add '
 alias load-git-tag-versioning='source ~/scripts/git-tag-v2.sh'
+alias load-git-pr='source ~/scripts/git-pr-create.sh'
+alias git-pr='source ~/scripts/git-pr-create.sh'
+alias git-pr-list='node ~/projects/automated-scripts/github-pr-list.js'
 
+alias load-project-payload-report-functions='source ~/scripts/project-payload-report-functions.sh'
 
+alias find-swp='/Users/dcvezzani/scripts/find-swp.sh'
+alias ls-projects='~/scripts/ls-projects.sh'
+alias load-ls-projects='LOADING=y source ~/scripts/ls-projects.sh'
+alias xml2json='/Users/dcvezzani/scripts/xml-to-json.js'
+alias create-standup='~/scripts/create-standup-notes.sh'
+alias publish-standup='~/scripts/publish-standup-notes.sh'
+alias create-work-log='~/scripts/create-work-log.sh'
+alias work-hours='~/scripts/work-hours.sh '
+alias ls-recent='~/scripts/ls-journal.sh '
+alias lsr-recent='INTERNAL=true ~/scripts/ls-journal.sh '
+alias create-timesheet-report='~/scripts/create-timesheet-report.sh'
 
+alias load-awscli=". ~/scripts/load-awscli.sh"
+alias livedown="~/scripts/livedown.sh "
+alias prj-open='. ~/scripts/prj-open.sh '
+alias open-pr='. ~/scripts/prj-open.sh '
+alias open-az='~/scripts/az-open-pipeline.sh '
+alias open-cf='cfbrowse '
 
+alias git-commit-ls='~/scripts/git-files-in-commit.sh '
+
+alias load-swagger-authoring='source ~/scripts/swagger-authoring.sh'
+
+alias cn="~/scripts/confluence-publishing/cn-cli.sh"
