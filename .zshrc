@@ -168,3 +168,7 @@ export SDKMAN_DIR="/Users/dcvezzani/.sdkman"
 # Add Visual Studio Code (code)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
+# Add Docker CLI
+DOCKER_CLI_HOME=/Applications/Docker.app/Contents/Resources/cli-plugins
+export PATH="$PATH:$DOCKER_CLI_HOME"
+

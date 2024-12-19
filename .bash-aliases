@@ -54,8 +54,10 @@ alias git-commit-details='~/scripts/git-commit-push-details.sh '
 alias git-pretty='~/scripts/git-cli-utils.sh files pretty'
 alias git-pretty-files='~/scripts/git-cli-utils.sh files pretty targeted '
 alias git-ls='~/scripts/git-cli-utils.sh files ls '
+alias ls-git='~/scripts/git-cli-utils.sh files ls '
 alias git-add='~/scripts/git-cli-utils.sh files git-add '
 alias load-git-tag-versioning='source ~/scripts/git-tag-v2.sh'
+alias load-git-commit='source ~/scripts/git-commit.sh'
 alias load-git-pr='source ~/scripts/git-pr-create.sh'
 alias git-pr='source ~/scripts/git-pr-create.sh'
 alias git-pr-list='node ~/projects/automated-scripts/github-pr-list.js'
@@ -82,7 +84,15 @@ alias open-az='~/scripts/az-open-pipeline.sh '
 alias open-cf='cfbrowse '
 
 alias git-commit-ls='~/scripts/git-files-in-commit.sh '
+alias git-activity='~/scripts/git-work-activity.sh'
 
 alias load-swagger-authoring='source ~/scripts/swagger-authoring.sh'
 
 alias cn="~/scripts/confluence-publishing/cn-cli.sh"
+alias publish-zip="~/scripts/team-one-project-dev-notes/publish-zip.sh"
+
+alias load-memory-reports="source /Users/dcvezzani/scripts/cf-memory-reports.sh"
+
+alias emoji-get-translation="/Users/dcvezzani/scripts/get-emoji-translation.js"
+
+alias chrome-tabs-copy="chrome-cli list tablinks | pbcopy"
